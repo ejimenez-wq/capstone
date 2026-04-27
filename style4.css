@@ -1,0 +1,107 @@
+body {
+            background: #f4f4f4;
+        }
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        nav {
+            background: #222;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .menu {
+            display: flex;
+            gap: 20px;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .menu a:hover {
+            color: #e67e22;
+        }
+
+        .hamburguesa {
+            display: none;
+            font-size: 25px;
+            cursor: pointer;
+        }
+
+
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+            url('https://images.unsplash.com/photo-1492724441997-5dc865305da7');
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 35px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container h2 {
+            margin-top: 20px;
+            color: #333;
+        }
+
+        .container p {
+            margin-top: 10px;
+            color: #555;
+        }
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .menu {
+                position: absolute;
+                top: 60px;
+                right: 0;
+                background: #222;
+                flex-direction: column;
+                width: 200px;
+                display: none;
+                padding: 10px;
+            }
+
+            .menu.active {
+                display: flex;
+            }
+
+            .hamburguesa {
+                display: block;
+            }
+
+            header h1 {
+                font-size: 26px;
+            }
+        }

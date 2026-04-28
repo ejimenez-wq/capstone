@@ -1,1 +1,62 @@
+body {
+  background-color: : #dfd2d2;
+  text-align: center;
+  color: 
+}
+        }
+h1 {
+  
+}
+.parrafo1 {
+  background-color: #ceeeed;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+}
+.parrafo2{
+  background-color: #fbeae0;
+  font-family: "Audiowide", sans-serif;
+  font-style: oblique;
+}
+.parrafo3{
+  background-color: #f7d4f1;
+  font-family: 
+}
+.parrafo4{
+  background-color: #eafbea
+}
+.parrafo5{
+  background-color: #f5ecfe
+}
+        nav {
+            background: #222;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .menu {
+            display: flex;
+            gap: 20px;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .menu a:hover {
+            color: #e67e22;
+        }
+
+        .hamburguesa {
+            display: none;
+            font-size: 25px;
+            cursor: pointer;
+        }

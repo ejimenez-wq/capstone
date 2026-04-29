@@ -1,12 +1,8 @@
 body {
-  background-color: : #dfd2d2;
+  background-color: : #ddc5b5;
   text-align: center;
   color: 
-}
-        }
-h1 {
-  
-}
+ }
 .parrafo1 {
   background-color: #ceeeed;
   font-family: "Times New Roman", Times, serif;
@@ -19,44 +15,61 @@ h1 {
 }
 .parrafo3{
   background-color: #f7d4f1;
-  font-family: 
+   font-family: Garamond, serif;
+  font-size: 20px
 }
 .parrafo4{
-  background-color: #eafbea
+  background-color: #c4f8c4;
+  font-family: "Lucida Console", "Courier New", monospace;
 }
 .parrafo5{
-  background-color: #f5ecfe
+  background-color: #cfc1dc;
+   font-style: oblique;
 }
-        nav {
-            background: #222;
-            color: white;
-            padding: 15px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+nav {
+   background: #222;
+   color: white;
+   padding: 15px 20px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.logo {
+   font-size: 20px;
+   font-weight: bold;
+}
+.menu {
+    display: flex;
+    gap: 20px;
+}
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+.menu a:hover {
+    color: #e67e22;
+}
+.hamburguesa {
+  display: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+.menu {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #222;
+    flex-direction: column;
+    width: 200px;
+    display: none;
+    padding: 10px;
+ }
 
-        .logo {
-            font-size: 20px;
-            font-weight: bold;
-        }
-
-        .menu {
-            display: flex;
-            gap: 20px;
-        }
-
-        .menu a {
-            color: white;
-            text-decoration: none;
-        }
-
-        .menu a:hover {
-            color: #e67e22;
-        }
-
-        .hamburguesa {
-            display: none;
-            font-size: 25px;
-            cursor: pointer;
-        }
+.menu.active {
+    display: flex;
+}
+.hamburguesa {
+    display: block;
+  }
+ }
